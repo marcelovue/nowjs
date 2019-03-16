@@ -1,3 +1,12 @@
 {
-  "alias": ["mordecai.surge.sh"]
+  "name":"nowjs",
+  "version":"1.0.0",
+  "env":"production",
+  "builds": [
+    { "src": "*.js", "use": "@now/node" },
+    { "src": "*.html", "use": "@now/static" }
+  ],
+  "github": {
+    "enabled": true
+  }
 }
