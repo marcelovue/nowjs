@@ -1,12 +1,11 @@
 {
-  "name":"nowjs",
-  "version":"1.0.0",
-  "env":"production",
+  "name":"nodejs",
+  "version": 2,
   "builds": [
     { "src": "*.js", "use": "@now/node" },
     { "src": "*.html", "use": "@now/static" }
   ],
-  "github": {
-    "enabled": true
-  }
+  "routes": [
+    { "src": "/(.*)", "dest": "index.js" }
+  ]
 }
